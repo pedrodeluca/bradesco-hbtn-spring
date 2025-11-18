@@ -14,7 +14,7 @@ public class UsuarioService {
         this.usuarioRepository = usuarioRepository;
     }
 
-    public Usuario buscarPorId(Long id) {
+    public Usuario buscarUsuarioPorId(Long id) {
         return usuarioRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
     }
